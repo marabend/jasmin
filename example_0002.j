@@ -1,11 +1,11 @@
-.class public Count
+.class public Counter
 .super java/lang/Object
 
 ; the instance initialization method
 .method public <init>()V
 	; just call Object's initializer
 	aload_0
-	invokespecial java/lang/Object/<int>()V
+	invokespecial java/lang/Object/<init>()V
 	return
 .end method
 
@@ -17,16 +17,17 @@
 	; setup local variables
 	
 	; 1 - the PrintStream object h eld in java.lang.System.out
-	getstatic java/lang/System/out Ljava/io/PrintStream
+	getstatic java/lang/System/out Ljava/io/PrintStream;
 	astore_1
-	
+
 	; 2 - the integer 10 - the counter used in the loop
 	bipush 10
 	istore_2
 	
 	; now loop 10 times printing out a number
 	
-Loop:
+Loop:	
+
 	; compute 10 <locale variable 2>, convert this integer to a string,
 	; and store the string result in local variable 3
 	bipush 10
