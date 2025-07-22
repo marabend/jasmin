@@ -1,4 +1,4 @@
-.class public HelloWorld
+.class public HelloWorld 
 .super java/lang/Object
 
 ; specify the constructor method for the Example class
