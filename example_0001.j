@@ -5,7 +5,7 @@
 
 .method public <init>()V
 	; just call object's constructor
-	aload_0
+	aload_0 
 	invokespecial java/lang/Object/<init>()V
 	return
 .end method
